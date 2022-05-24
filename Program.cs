@@ -6,15 +6,16 @@ namespace Conditionals
     {
         static void Main(string[] args)
         {
-            var number = 12;
+            var number1 = 14;
+            var number2 = 22;
 
-            if (number < 10)
+            if (number1 < number2 )
             {
-                Console.WriteLine("Number Valid");
+                Console.WriteLine(number2);
             }
             else 
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine(number1);
             }
         }
     }
