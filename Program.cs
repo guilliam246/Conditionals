@@ -6,17 +6,24 @@ namespace Conditionals
     {
         static void Main(string[] args)
         {
-            bool isGoldCustomer = true;
+            var season = Seasons.Autumn;
+            
+            switch (season)
+            {
+                case Seasons.Autumn:
+                    Console.WriteLine("Its Autumn");
+                    break;
+                
+                case Seasons.Summer:
+                    Console.WriteLine( "its Pefect time for the beach");
+                    break;
 
-           //float price;
-           // if (isGoldCustomer)
-           //    price = 19.95f;
-           // else
-           //     price = 29.95f;
+                default:
+                    Console.WriteLine("I Dont know that season");
+                    break;
+                   
 
-            //The below is the same as above just simpler
-
-            float price = (isGoldCustomer) ? 19.95f : 29.95f;
+            }
         }
     }
 }
