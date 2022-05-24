@@ -6,16 +6,16 @@ namespace Conditionals
     {
         static void Main(string[] args)
         {
-            var number1 = 14;
-            var number2 = 22;
+            var hight = 33;
+            var width = 22;
 
-            if (number1 < number2 )
+            if (hight > width )
             {
-                Console.WriteLine(number2);
+                Console.WriteLine("This is a portrait image");
             }
             else 
             {
-                Console.WriteLine(number1);
+                Console.WriteLine("This is a landscape image");
             }
         }
     }
