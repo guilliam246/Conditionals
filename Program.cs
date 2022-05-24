@@ -6,20 +6,15 @@ namespace Conditionals
     {
         static void Main(string[] args)
         {
-            var season = Seasons.Autumn;
-            
-            switch (season)
+            var number = 12;
+
+            if (number < 10)
             {
-                case Seasons.Autumn:
-                case Seasons.Summer:
-                    Console.WriteLine( "We have a promotion"); //this means that both cases will show this message
-                    break;
-
-                default:
-                    Console.WriteLine("I Dont know that season");
-                    break;
-                   
-
+                Console.WriteLine("Number Valid");
+            }
+            else 
+            {
+                Console.WriteLine("Invalid");
             }
         }
     }
